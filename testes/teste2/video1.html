@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz para programadores</title>
+        <meta name="description" content="um quiz interativo para testar seus conhecimentos de programação">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Quiz interativo para programadores</h1>
+            <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
+        </header>
+        <!-- header(cabeçalho), main e footer(rodapé) são apenas separadores, não é algo funcional -->
+        <main>
+            <section>
+                <h2>Sobre esse quiz</h2>
+                <p><strong>Esse quiz</strong> foi feito para <b>testar</b> seus <i>conhecimentos</i> <br> de <em>liguagem de programação</em> em <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p><br>
+                <p>Você encontrará multiplos tipos de perguntas, e com conteúdos que irão abranger otras linguagens também</p>
+
+                <!-- strong deixa em negrito(destaque importante no codigo, bastante usado no dia a dia, é css pelo que ouvi falar), em deixa em italico(estaque importante no codigo, bastante usado no dia a dia,é css pelo que ouvi falar)
+                b serve para deixar em um negrito mais suave(é html), i deixa o texto em italico(é html) -->
+                <!-- abbr é para mostrar um texto quando passar o mouse sobre uma abreviação(é html) -->
+            
+            </section>
+
+            <!-- pergunta1, multipla escolha -->
+            <section>
+                <h2>Pergunta1: Qual a linguagem é usada para estruturar páginas web?</h2>
+                <formr>
+                    <input type="radio" value="Python" id="pla0" name="pergunta1">
+                    <label for="pla0">Python</label><br>
+                    <input type="radio" value="Java" id="pla1" name="pergunta1">
+                    <label for="pla1">Java</label><br>
+                    <input type="radio" value="Javascript" id="pla2" name="pergunta1">
+                    <label for="pla2">Javascript</label><br>
+                    <input type="radio" value="HTML" id="pla3" name="pergunta1">
+                    <label for="pla1">HTML</label><br>
+                    <input type="radio" value="Ruby" id="pla4" name="pergunta1">
+                    <label for="pla1">Ruby</label>
+                </formr>
+            </section>
+
+            <!-- pergunta2, texto -->
+            <secttion>
+                <h2>Pergunta2: Na URL https://www.google.com o trecho "google.com" é o ___</h2>
+                <form>
+                    <input type="text" id="p2" name="pergunta2" placeholder="informe sua resposta...">
+                    <!-- placeholder é para o texto que fica dentro da caixa de resposta em branco -->
+                </form>
+            </secttion>
+
+            <!-- pergunta3, senha -->
+            <section>
+                <h2>Pergunta3: Escreva um exemplo de senha forte:</h2>
+                <form>
+                    <input type="password" id="p3" name="pergunta3" placeholder="Digite uma senha...">
+                </form>
+            </section>
+
+            <!-- pergunta4, data -->
+            <section>
+                <h2>Pergunta4: Em que ano o HTML lançou sua primeira versão?</h2>
+                <form>
+                    <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+
+            <!-- pergunta5, seleção multipla -->
+            <section>
+                <h2>Pergunta5: Quais dessas tecnologias são consideradas liguagens de programação?</h2>
+                <form>
+                    <input type="checkbox" id="p5a" name="pergunta5" value="Javascript">
+                    <label for="p5a">Javascript</label><br>
+
+                     <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
+                    <label for="p5b">HTML</label><br>
+
+                     <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+                    <label for="p5c">Java</label><br>
+
+                     <input type="checkbox" id="p5d" name="pergunta5" value="CSS">
+                    <label for="p5d">CSS</label><br>
+                </form>
+            </section>
+
+            <!-- pergunta6, upload de arquivo -->
+            <section>
+                <h2>Pergunta6: Faça o upload de um arquivo contendo código html</h2>
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+
+            <!-- pergunta7, menu suspenso -->
+            <section>
+                <h2>Pergunta7: Selecione o atributo do input que define seu tipo</h2>
+                <form>
+                    <select name="pergunta7" id="p7" >
+                        <option value="id">ID</option>
+                        <option value="type">type</option>
+                        <option value="placeholder">placeholder</option>
+                        <option value="name">name</option>
+                    </select>
+                </form>
+            </section>
+
+            <!-- pergunta8, imagem -->
+            <section>
+                <h2>Pergunta8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgY4Wfy9hXIn-GOD3xvwiisF8GM97MiktoA&s" alt="Logotipo de uma linguagem de programação">
+                    <figcaption>Figura1: Logotipo de uma linguagem de programação</figcaption>
+                </figure>
+
+                <!-- se o arquivo da imagem estiver na mesma pasta basta passar o nome do arquivo com formato, por ex pep.jpeg
+                se o arquivo da imagem estiver em outra pasta(assets) deve colocar ./nomedapasta/nomedoarquivo , por ex .assets/pep8.jpeg -->
+                <!-- alt é para escrever um texto alternativo se sua imagem não for carregada e para leitor de tela -->
+                 <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta">
+            </section>
+
+            <!-- Tabela de pontuação -->
+            <section>
+                <h2>Tabela de pontuação:</h2>
+                <table border="1">
+                    <!-- tr é para cada linha -->
+                    <!-- td é para cada celula da linha -->
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Não desista, cada tentativa gera experiencia!</td>
+                        </tr>
+
+                        <tr>
+                            <td>3-4</td>
+                            <td>Você precisa melhorar</td>
+                        </tr>
+
+                        <tr>
+                            <td>5-6</td>
+                            <td>Você pode fazer melhor, não relaxe</td>
+                        </tr>
+
+                        <tr>
+                            <td>7-8</td>
+                            <td>Excelente, arrasou, continue estudando</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <td colspan="2">Boa sorte na proxima</td>
+                        <!-- colspan é para determinar quantas colunas ocupa -->
+                    </tfoot>
+                </table>
+            </section>
+
+            <!-- lista de respostas -->
+            <section>
+                <h2>Verifique suas respostas</h2>
+                <details>
+                    <summary>Clique aqui para ver as respostas do quiz</summary>
+                    <ol>
+                        <li>HTML</li>
+                        <li>Dominio</li>
+                        <li>Abc234#&81"23Abd</li>
+                        <li>1991</li>
+                        <li>Javascript, Java</li>
+                        <li>Arquivo deve ter extensão .html</li>
+                        <li>type</li>
+                        <li>Java</li>
+                    </ol>
+                </details>
+            </section>
+
+            <!-- feedback -->
+            <section></section>
+        </main>
+
+        <footer>https://www.linkedin.com/in/gabriel-caricchio-8198a7371/</footer>
+    </body>
+</html>
